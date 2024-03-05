@@ -1,0 +1,103 @@
+body {
+    position: relative; /* Allows absolute positioning relative to the body */
+    font-family: 'Arial', sans-serif;
+    background-color: #51f0e8;
+    margin: 0;
+    padding: 0;
+    padding-right: 200px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-container p {
+    font-size: 1.3rem; /* Slightly larger paragraph text */
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 600px; /* Keeps the text from spanning too wide */
+}
+
+.main-container h1 {
+    font-size: 3.5rem; /* Larger size for the heading */
+    color: #6a1b9a; /* Fun, vibrant color for the heading */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.additional-image-container {
+    position: absolute;
+    right: 400px; /* Adjust this value to move the image more to the right */
+    top: 50px; /* Adjust this value to move the image down a bit */
+    z-index: 2; /* Ensure the image is above the text and other elements */
+}
+
+.additional-image {
+    width: 300px; /* Adjust based on your image size */
+    height: 300px; /* Adjust based on your image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.start-btn{
+    display: inline-block;
+	font-family: 'Baloo 2', cursive; /* Cute, rounded font */
+    font-size: 1.1rem; /* Bigger font size */
+    background-color: #ff4081; /* Soft, playful button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Rounded corners for a soft look */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from the link */
+    transition: transform 0.2s; /* Smooth transition for interaction */
+    position: absolute; /* Position the button absolutely within its relative container */
+    right: 580px; /* 20px from the right edge of the body or its nearest positioned ancestor */
+    bottom: 200px; /* 20px from the bottom to lift it up a bit */
+}
+
+.stitch-container {
+    position: absolute; /* Allows for precise positioning within the body */
+    width: 100px; /* Adjust based on your image size */
+    height: 100px; /* Adjust based on your image size */
+	cursor: grab;
+}
+
+#stitch1 {
+    top: 20px;
+    left: 20px;
+}
+
+.stitch {
+    width: 30vw; /* Width is 10% of the viewport width */
+    height: auto; /* Height is automatically adjusted to maintain aspect ratio */
+    cursor: grab; /* Cursor indicates the item is draggable */
+    position: absolute; /* Make sure the image can overlay the button */
+    z-index: 3; /* Higher than the button to cover it initially */
+}
+
+.reveal-btn {
+    position: absolute; /* Position the button directly under the image */
+    top: 100px; /* Adjust this value so the button sits right below the image */
+	left: 200px;
+    width: 100%; /* Match the container width */
+    border-radius: 20px; /* Rounded edges for the button */
+    z-index: 1; /* Lower than the image so it's initially hidden */
+    padding: 10px 15px; /* Increased padding for a larger button */
+    font-size: 18px; /* Larger font size for the text */
+    font-family: 'Arial', sans-serif; /* Change the font-family */
+    color: white; /* Text color */
+    background-color: #007bff; /* Background color */
+	border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    transition: background-color 0.3s; /* Smooth transition for background color change on hover */
+}
+.reveal-btn:hover {
+    background-color: #0056b3; /* Darker shade when hovering */
+}
+
+#stitch1 .reveal-btn:nth-child(2) { top: 150px; }
+#stitch1 .reveal-btn:nth-child(3) { top: 200px; } /* Adjusted spacing */
+#stitch1 .reveal-btn:nth-child(4) { top: 250px; }
+#stitch1 .reveal-btn:nth-child(5) { top: 300px; }
+#stitch1 .reveal-btn:nth-child(6) { top: 350px; }

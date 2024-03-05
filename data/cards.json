@@ -1,0 +1,38 @@
+[
+    {
+        "image": "assets/charizard.png",
+        "name": "charizard"
+    },
+    {
+        "image": "assets/garchomp.png",
+        "name": "garchomp"
+    },
+    {
+        "image": "assets/electivire.png",
+        "name": "electivire"
+    },
+    {
+        "image": "assets/milotic.png",
+        "name": "milotic"
+    },
+    {
+        "image": "assets/mimikyu.png",
+        "name": "mimikyu"
+    },
+    {
+        "image": "assets/umbreon.png",
+        "name": "umbreon"
+    },
+    {
+        "image": "assets/piplup.png",
+        "name": "piplup"
+    },
+    {
+        "image": "assets/psyduck.png",
+        "name": "psyduck"
+    },
+    {
+        "image": "assets/giratina.png",
+        "name": "giratina"
+    }
+]

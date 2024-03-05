@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0F2F1; /* Tiffany blue shade */
+    color: #05595B; /* A darker shade for contrast */
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#greeting-container h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #008A8F;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your preference */
+}
+
+#left-photos, #right-photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#videos-container {
+    display: flex;
+    flex-direction: row; /* Change to row to align items horizontally */
+    align-items: center;
+    justify-content: center; /* Center the videos horizontally */
+    gap: 20px; /* Space between each video */
+}
+
+video {
+    width: 200px; /* Adjust based on your preference */
+    height: 350px; /* Making videos vertically longer */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#left-photos img, #right-photos img {
+    width: 200px; /* Adjust based on your preference */
+    height: 200px; /* Adjust based on your preference */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.return-button {
+    background-color: #0abab5; /* Tiffany blue color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'arial', sans-serif; /* Replace 'Cute Font' with your actual font */
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.return-button:hover, .return-button:focus {
+    background-color: #08a0a0; /* Slightly darker shade for hover effect */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}

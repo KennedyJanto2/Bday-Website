@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    margin: 0; /* Remove default margin to prevent unnecessary scrolling */
+    padding: 20px; /* Add some padding to ensure content doesn't touch the edges */
+    background-color: #878b8b; /* Set background color to a light gray */
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+#puzzle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; /* Increased space for a less cramped look */
+    padding: 20px;
+    background: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.placeholder {
+    width: 200px;
+    height: 300px;
+    border: 2px dashed #aaa;
+    margin: 0 20px; /* Increased spacing for a more open layout */
+    background-size: cover;
+    border-radius: 5px; /* Slight rounding of corners */
+    transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+.placeholder:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover for a tactile feel */
+}
+
+.puzzle-image {
+    width: 200px; /* Your desired width */
+    height: 300px; /* Your desired height */
+    margin: 0 10px;
+    cursor: grab;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* For smooth transitions */
+}
+
+.puzzle-image:active {
+    cursor: grabbing;
+}
+
+.puzzle-image:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* More pronounced shadow on hover for depth */
+}
+
+#images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px; /* Added space between the puzzle and images */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
